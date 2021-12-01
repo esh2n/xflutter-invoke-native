@@ -24,6 +24,10 @@ class HomePage extends StatelessWidget {
             onTap: () => Routemaster.of(context).push('hello-world'),
             label: 'To 404',
           ),
+          _FeatureCard(
+            onTap: () => Routemaster.of(context).push('platform'),
+            label: 'Platform',
+          ),
         ],
       ),
     );

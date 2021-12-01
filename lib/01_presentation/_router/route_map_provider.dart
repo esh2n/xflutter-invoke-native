@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:routemaster/routemaster.dart';
+import '../platform_page/platform_page.dart';
 import '../setting_page/setting_page.dart';
 import '../app_info_page/app_info_page.dart';
 import '../home_page/home_page.dart';
@@ -24,6 +25,9 @@ final routeMapProvider = Provider((ref) {
       // Home / App info
       '/${HomePage.routeName}/app-info': (route) =>
           const MaterialPage<void>(child: AppInfoPage()),
+      // Home / Platform
+      '/${HomePage.routeName}/platform': (route) =>
+          const MaterialPage<void>(child: PlatFormPage()),
       // Settings
       '/settings': (route) => const MaterialPage<void>(child: SettingsPage()),
     },
