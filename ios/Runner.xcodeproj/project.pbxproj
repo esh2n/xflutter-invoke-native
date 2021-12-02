@@ -12,6 +12,8 @@
 		5FFCFA1150CA7DCC9368F8DE /* Pods_Runner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0DD1DBBFB8D20AC75D3DAFA /* Pods_Runner.framework */; };
 		74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74858FAE1ED2DC5600515810 /* AppDelegate.swift */; };
 		84CC5776274F846A004375CA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84CC5775274F846A004375CA /* GoogleService-Info.plist */; };
+		84EF2D352757A4880025C919 /* PlatformChannelStreamHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF2D342757A4880025C919 /* PlatformChannelStreamHandler.swift */; };
+		84EF2D372757A5AF0025C919 /* PlatformChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF2D362757A5AF0025C919 /* PlatformChannel.swift */; };
 		97C146FC1CF9000F007C117D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FA1CF9000F007C117D /* Main.storyboard */; };
 		97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FD1CF9000F007C117D /* Assets.xcassets */; };
 		97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */; };
@@ -40,6 +42,8 @@
 		7AFA3C8E1D35360C0083082E /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Release.xcconfig; path = Flutter/Release.xcconfig; sourceTree = "<group>"; };
 		819730C131F6494FEB6B0847 /* Pods-Runner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.release.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.release.xcconfig"; sourceTree = "<group>"; };
 		84CC5775274F846A004375CA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "dev/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		84EF2D342757A4880025C919 /* PlatformChannelStreamHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformChannelStreamHandler.swift; sourceTree = "<group>"; };
+		84EF2D362757A5AF0025C919 /* PlatformChannel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformChannel.swift; sourceTree = "<group>"; };
 		9740EEB21CF90195004384FC /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Debug.xcconfig; path = Flutter/Debug.xcconfig; sourceTree = "<group>"; };
 		9740EEB31CF90195004384FC /* Generated.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Generated.xcconfig; path = Flutter/Generated.xcconfig; sourceTree = "<group>"; };
 		97C146EE1CF9000F007C117D /* Runner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Runner.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +75,15 @@
 				BB44572FA34FF23D137A768D /* Pods-Runner.profile.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		84EF2D332757A4570025C919 /* Channels */ = {
+			isa = PBXGroup;
+			children = (
+				84EF2D342757A4880025C919 /* PlatformChannelStreamHandler.swift */,
+				84EF2D362757A5AF0025C919 /* PlatformChannel.swift */,
+			);
+			path = Channels;
 			sourceTree = "<group>";
 		};
 		9740EEB11CF90186004384FC /* Flutter */ = {
@@ -107,6 +120,7 @@
 		97C146F01CF9000F007C117D /* Runner */ = {
 			isa = PBXGroup;
 			children = (
+				84EF2D332757A4570025C919 /* Channels */,
 				97C146FA1CF9000F007C117D /* Main.storyboard */,
 				97C146FD1CF9000F007C117D /* Assets.xcassets */,
 				97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */,
@@ -297,6 +311,8 @@
 			files = (
 				74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */,
 				1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */,
+				84EF2D372757A5AF0025C919 /* PlatformChannel.swift in Sources */,
+				84EF2D352757A4880025C919 /* PlatformChannelStreamHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
